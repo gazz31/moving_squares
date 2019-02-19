@@ -1,0 +1,190 @@
+@charset "utf-8";
+.container {
+	display: block;
+	width: 1150px;
+
+}
+#main .top
+ {
+	width: 90%;
+	margin: 1em auto 0 auto;
+	background: gray;
+	height: 2.6em;
+	border-radius:15px;
+}
+#main .left:hover, .right:hover {
+	background:orange;
+	cursor:pointer;
+}
+
+#main .middle {
+	background: black;
+	width: 60%;
+	display: block;
+	height: 400px;
+	margin: 3em auto;
+	clear: both;
+
+}
+
+.middle:hover
+{
+	background:red;
+}
+
+#main .top .navi {
+	width: 100%;
+}
+.left {
+	float: left;
+	width: 50%;
+	padding: .6em 0;
+	background: gray;
+	margin-bottom:.7rem;
+}
+
+.below_1
+{
+	display: none;
+	position: relative;
+	padding: 1.9rem 0;
+	background:red;
+	
+}
+.below_2
+{
+	display: none;
+	position: relative;
+	padding: 1.5rem 0;
+	background:red;
+	overflow: hidden;
+}
+
+.left:hover .below_1 
+{
+  border-top:15px solid #23AD37;
+  cursor: pointer;
+  position: relative;
+  background: lightgreen;
+  display:block; 
+  transition: 1s ease-out; 
+  transform: translateY(32px);
+}
+	
+.left:hover .below_2 
+{
+  border-top:15px solid #23AD37;
+  cursor: pointer;
+  position: relative;
+  background: lightgreen;
+  display:block; 
+  transition: 1s ease-out; 
+  transform: translateY(20px);
+}
+
+.right {
+	float: right;
+	width: 50%;
+	padding: .6em 0;
+	background: gray;
+	margin-bottom:.7rem;
+}
+
+.below_3
+{
+	display: none;
+	position: relative;
+	padding: 1.9rem 0;
+	background:red;
+	
+}
+.below_4
+{
+	display: none;
+	position: relative;
+	padding: 1.5rem 0;
+	background:red;
+	overflow: hidden;
+}
+
+.right:hover .below_3 
+{
+  border-top:15px solid #23AD37;
+  cursor: pointer;
+  position: relative;
+  background: lightgreen;
+  display:block; 
+  transition: 1s ease-out; 
+  transform: translateY(32px);
+}
+	
+.right:hover .below_4
+{
+  border-top:15px solid #23AD37;
+  cursor: pointer;
+  position: relative;
+  background: lightgreen;
+  display:block; 
+  transition: 1s ease-out; 
+  transform: translateY(20px);
+}
+.left > .below_1:hover
+{
+	border-color:black;
+	background:red;
+}
+.left > .below_2:hover
+{
+	border-color:black;
+	background:red;
+}
+.right > .below_3:hover
+{
+	border-color:black;
+	background:red;
+}
+.right > .below_4:hover
+{
+	border-color:black;
+	background:red;
+}
+
+
+.square_1_hiden
+{
+	padding:55px 0;
+	width:150px;
+	background: pink;
+	position:absolute;
+	left:238px;
+	display:none;
+}
+.square_2_hiden
+{
+	padding:55px 0;
+	width:150px;
+	background: pink;
+	position:absolute;
+	left:778px;
+	display:none;
+}
+.square_3_hiden
+{
+	padding:55px 0;
+	width:150px;
+	background: pink;
+	position:absolute;
+	left:238px;
+	top:396px;
+	display:none;
+}
+.square_4_hiden
+{
+	padding:55px 0;
+	width:150px;
+	background: pink;
+	position:absolute;
+	left:778px;
+	bottom:-128px;
+	display:none;
+}
