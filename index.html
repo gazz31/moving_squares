@@ -3,7 +3,25 @@
 <head>
 <meta charset="utf-8">
 <title>jakiś przykład</title>
-<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+<script src="jquery-3.3.1.min.js">
+					
+	
+</script>
+<script>
+	$(window).ready(function(){
+		$(".moving_square").ready(function(){
+				$(".moving_square").hide(2000),
+				$(".moving_square").animate({"left":"+=120px"}),
+				$(".moving_square").show(2000),
+			
+			
+				$(".moving_square").animate({"left":"+=900px"},5000)
+			
+			
+		});
+});
+</script>
+
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="initial-scale=1.0">
 </head>
@@ -27,6 +45,7 @@
 		</div>
     </nav>
   </div>
+	
   <main class="middle">
 	<div class="content">
 		
@@ -34,8 +53,13 @@
 		<div class="square_2_hiden"></div>
 		<div class="square_3_hiden"></div>
 		<div class="square_4_hiden"></div>
-		<div class="moving_squre"></div>
-		
+	
+		<div class="moving_square" id="moving_square">
+			
+			
+			
+		</div>
+	
 	  </div>
   </main>
 	
