@@ -2,6 +2,7 @@
 .container {
 	display: block;
 	width: 1150px;
+	margin:0 auto;
 
 }
 #main .top
@@ -22,14 +23,17 @@
 	width: 60%;
 	display: block;
 	height: 400px;
-	margin: 3em auto;
+	margin:12em auto 0 auto;
 	clear: both;
+	border-radius:20px;
 
 }
 
-.middle:hover
+#main .middle:hover
 {
-	background:red;
+	background:purple;
+	cursor:pointer;
+	
 }
 
 #main .top .navi {
@@ -152,39 +156,62 @@
 
 .square_1_hiden
 {
-	padding:55px 0;
-	width:150px;
-	background: pink;
-	position:absolute;
-	left:238px;
-	display:none;
+	padding: 55px 0;
+	width: 150px;
+	background: orangered;
+	position: absolute;
+	left: 615px;
+	display: none;
+	
 }
+
+
 .square_2_hiden
 {
 	padding:55px 0;
 	width:150px;
 	background: pink;
 	position:absolute;
-	left:778px;
+	left:1155px;
 	display:none;
+	
 }
 .square_3_hiden
 {
 	padding:55px 0;
 	width:150px;
-	background: pink;
+	background:lightseagreen;
 	position:absolute;
-	left:238px;
-	top:396px;
+	left:615px;
+	top:540px;
 	display:none;
+	
 }
 .square_4_hiden
 {
 	padding:55px 0;
 	width:150px;
-	background: pink;
+	background: orangered;
 	position:absolute;
-	left:778px;
-	bottom:-128px;
+	left:1155px;
+	top:540px;
 	display:none;
+	
+	
+}
+.middle .content .moving_square {
+	padding: 45px 0;
+	width: 100px;
+	background: red;
+	display: none;
+	position: absolute;
+	bottom: 495px;
+	left: 622px;
+}
+p
+{
+	font-size:5em;
+	text-align: center;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-style: italic;
 }

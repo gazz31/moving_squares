@@ -9,20 +9,64 @@
 </script>
 <script>
 	$(window).ready(function(){
-		$(".moving_square").ready(function(){
+		$(".middle").click(function(){
+			$(".top").hide(0),
+			$(".moving_square").show(0),
+			  $(".square_4_hiden").hide(0),
+				$(".square_3_hiden").hide(0),
+				$(".square_2_hiden").hide(0),
+				$(".square_1_hiden").hide(0),
 				$(".moving_square").hide(2000),
-				$(".moving_square").animate({"left":"+=120px"}),
+				$(".moving_square").animate({"left":"+=220px"}),
+				$(".square_4_hiden").css("top","482px"),
+				$(".square_3_hiden").css("top","482px"),
+
+				$(".square_4_hiden").delay(0).show(1000).delay(0).hide(100),
+				$(".square_3_hiden").delay(0).show(1000).delay(0).hide(100),
+				$(".square_1_hiden").delay(0).show(1000).delay(0).hide(100),
+				$(".square_2_hiden").delay(0).show(1000).delay(0).hide(100),
+
+
 				$(".moving_square").show(2000),
 			
 			
-				$(".moving_square").animate({"left":"+=900px"},5000)
+				$(".moving_square").animate({"left":"+=357px"},1000),
+				$(".square_4_hiden").delay(4000).show(1000).delay(12100).hide(1000),
+				$(".moving_square").animate({"bottom":"-=140px"},1000),
+				$(".square_3_hiden").delay(5000).show(1000).delay(12200).hide(1000),
+				$(".moving_square").animate({"left":"-=580px"},1000),
+				$(".square_1_hiden").delay(6000).show(1000).delay(12300).hide(1000),
+				$(".moving_square").animate({"bottom":"+=290px"},1000),
+				$(".square_2_hiden").delay(7000).show(1000).delay(12400).hide(1000),
+				$(".moving_square").animate({"left":"+=580px"},1000),
+				$(".moving_square").animate({"bottom":"-=290px"},1000),
+
+				$(".moving_square").animate({"left":"-=580px"},1000),
 			
+				$(".moving_square").animate({"bottom":"+=290px"},1000),
+				
+				$(".moving_square").animate({"left":"+=580px"},1000),
+				$(".moving_square").animate({"bottom":"-=290px"},1000),
+				$(".content").animate({"display":"block"},1000),
+				$(".moving_square").animate({"left":"-=580px"},1000),
 			
+				$(".moving_square").animate({"bottom":"+=290px"},1000),
+	
+				$(".moving_square").animate({"left":"+=580px"},1000),
+				$(".moving_square").animate({"bottom":"-=290px"},1000),
+
+				$(".moving_square").animate({"left":"-=580px"},1000),
+		
+				$(".moving_square").animate({"bottom":"+=290px"},1000),
+				
+				$(".moving_square").animate({"left":"+=580px"},1000)
+				
+				
 		});
 });
 </script>
 
-<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="style.css" rel="stylesheet" type="text/css">
 <meta name="viewport" content="initial-scale=1.0">
 </head>
 
@@ -62,7 +106,7 @@
 	
 	  </div>
   </main>
-	
+	<p>Kliknij raz na czarne tło.</p>
   <footer class="footy">
     <div class="leftt"></div>
     <div class="rightt"></div>
