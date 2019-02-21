@@ -8,6 +8,60 @@
 	
 </script>
 <script>
+	
+$(window).ready(function(){
+		$(".click_1_show").click(function(){
+		$(".square_1_hiden").show(1000).delay(3000).hide(1000)
+	});
+	
+});
+$(window).ready(function(){
+		$(".click_1_hide").click(function(){
+		$(".square_1_hiden").stop().hide(1000)
+	});
+	
+});
+
+
+$(window).ready(function(){
+		$(".click_2_show").click(function(){
+		$(".square_2_hiden").show(1000).delay(3000).hide(1000)
+	});
+	
+});
+$(window).ready(function(){
+		$(".click_2_hide").click(function(){
+		$(".square_2_hiden").stop().hide(1000)
+	});
+	
+
+
+});$(window).ready(function(){
+		$(".click_3_show").click(function(){
+		$(".square_3_hiden").show(1000).delay(3000).hide(1000)
+	});
+	
+});
+$(window).ready(function(){
+		$(".click_3_hide").click(function(){
+		$(".square_3_hiden").stop().hide(1000)
+	});
+	
+});$(window).ready(function(){
+		$(".click_4_show").click(function(){
+		$(".square_4_hiden").show(1000).delay(3000).hide(1000)
+	});
+	
+});
+$(window).ready(function(){
+		$(".click_4_hide").click(function(){
+		$(".square_4_hiden").stop().hide(1000)
+	});
+	
+});
+
+	
+
 	$(window).ready(function(){
 		$(".middle").click(function(){
 			$(".top").hide(0),
@@ -32,7 +86,7 @@
 			
 				$(".moving_square").animate({"left":"+=357px"},1000),
 				$(".square_4_hiden").delay(4000).show(1000).delay(12100).hide(1000),
-				$(".moving_square").animate({"bottom":"-=140px"},1000),
+				$(".moving_square").animate({"bottom":"-=202px"},1000),
 				$(".square_3_hiden").delay(5000).show(1000).delay(12200).hide(1000),
 				$(".moving_square").animate({"left":"-=580px"},1000),
 				$(".square_1_hiden").delay(6000).show(1000).delay(12300).hide(1000),
@@ -59,7 +113,9 @@
 		
 				$(".moving_square").animate({"bottom":"+=290px"},1000),
 				
-				$(".moving_square").animate({"left":"+=580px"},1000)
+				$(".moving_square").animate({"left":"+=580px"},1000),
+				
+					$(this).delay(10000).animate({background:"yellow"}, 10000)
 				
 				
 		});
@@ -75,16 +131,16 @@
 	
   <div class="top">
 	<nav class="navi">
-	  <div class="left">
+	  <div class="left">Click me here!
 		  
-			<div class="below_1"></div>
-			<div class="below_2"></div>
+			<div class="below_1"><a href="#" class="click_1_show">show square 1 </a><a href="#" class="click_1_hide"> hide square 1 </a></div>
+			<div class="below_2"><a href="#" class="click_2_show">show square 2 </a><a href="#" class="click_2_hide"> hide square 2 </a></div>
 		
 		</div>
-	  <div class="right">
+	  <div class="right">Click me here!
 		  
-			<div class="below_3"></div>
-			<div class="below_4"></div>
+			<div class="below_3"><a href="#" class="click_3_show">show square 3 </a><a href="#" class="click_3_hide"> hide square 3 </a></div>
+			<div class="below_4"><a href="#" class="click_4_show">show square 4 </a><a href="#" class="click_4_hide"> hide square 4 </a></div>
 		  
 		</div>
     </nav>
