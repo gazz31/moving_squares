@@ -71,7 +71,7 @@ $(window).ready(function(){
 				$(".square_2_hiden").hide(0),
 				$(".square_1_hiden").hide(0),
 				$(".moving_square").hide(2000),
-				$(".moving_square").animate({"left":"+=220px"}),
+				$(".moving_square").animate({"left":"+=220px", responsive: true}),
 				$(".square_4_hiden").css("top","482px"),
 				$(".square_3_hiden").css("top","482px"),
 
@@ -81,39 +81,39 @@ $(window).ready(function(){
 				$(".square_2_hiden").delay(0).show(1000).delay(0).hide(100),
 
 
+				$(".square_4_hiden").css({"top":"616px", "left":"1155px"},1000),
+				$(".square_3_hiden").css({"top":"616px", "left":"615px"},1000),
+				$(".square_2_hiden").css({"top":"325px", "left":"1155px"},1000),
+				$(".square_1_hiden").css({"top":"325px", "left":"615px"},1000),
+
+
 				$(".moving_square").show(2000),
 			
 			
-				$(".moving_square").animate({"left":"+=357px"},1000),
-				$(".square_4_hiden").delay(4000).show(1000).delay(12100).hide(1000),
-				$(".moving_square").animate({"bottom":"-=202px"},1000),
-				$(".square_3_hiden").delay(5000).show(1000).delay(12200).hide(1000),
-				$(".moving_square").animate({"left":"-=580px"},1000),
-				$(".square_1_hiden").delay(6000).show(1000).delay(12300).hide(1000),
-				$(".moving_square").animate({"bottom":"+=290px"},1000),
-				$(".square_2_hiden").delay(7000).show(1000).delay(12400).hide(1000),
-				$(".moving_square").animate({"left":"+=580px"},1000),
-				$(".moving_square").animate({"bottom":"-=290px"},1000),
+				$(".moving_square").animate({"left":"+=370px"},1000),
+				$(".square_4_hiden").delay(4000).show(1000).delay(8000).hide(1000),
+				$(".moving_square").animate({"bottom":"-=170px"},1000),
+				$(".square_3_hiden").delay(5000).show(1000).delay(7900).hide(1000),
+				$(".moving_square").animate({"left":"-=592px"},1000),
+				$(".square_1_hiden").delay(6000).show(1000).delay(7880).hide(1000),
+				$(".moving_square").animate({"bottom":"+=310px"},1000),
+				$(".square_2_hiden").delay(7000).show(1000).delay(7820).hide(1000),
+				$(".moving_square").animate({"left":"+=590px"},1000),
+				$(".moving_square").animate({"bottom":"-=310px"},1000),
 
-				$(".moving_square").animate({"left":"-=580px"},1000),
+				$(".moving_square").animate({"left":"-=590px"},1000),
 			
-				$(".moving_square").animate({"bottom":"+=290px"},1000),
+				$(".moving_square").animate({"bottom":"+=310px"},1000),
 				
-				$(".moving_square").animate({"left":"+=580px"},1000),
-				$(".moving_square").animate({"bottom":"-=290px"},1000),
-				$(".content").animate({"display":"block"},1000),
-				$(".moving_square").animate({"left":"-=580px"},1000),
+				$(".moving_square").animate({"left":"+=592px"},1000),
+				$(".moving_square").animate({"bottom":"-=310px"},1000),
+				
+				$(".moving_square").animate({"left":"-=592px"},1000),
 			
-				$(".moving_square").animate({"bottom":"+=290px"},1000),
+				$(".moving_square").animate({"bottom":"+=310px"},1000),
 	
-				$(".moving_square").animate({"left":"+=580px"},1000),
-				$(".moving_square").animate({"bottom":"-=290px"},1000),
-
-				$(".moving_square").animate({"left":"-=580px"},1000),
-		
-				$(".moving_square").animate({"bottom":"+=290px"},1000),
-				
-				$(".moving_square").animate({"left":"+=580px"},1000),
+				$(".moving_square").animate({"left":"+=592px"},1000),
+				$(".moving_square").hide(500);
 				
 					$(this).delay(10000).animate({background:"yellow"}, 10000)
 				

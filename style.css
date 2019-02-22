@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 
-@media only screen and (max-width: 1920px) and (min-width: 1920px){
+@media only screen and (max-width: 1920px) {
 	.container {
 		display: block;
 		width: 1150px;
@@ -16,7 +16,7 @@
 		height: 2.6em;
 		border-radius:15px;
 	}
-	#main .left:hover, .right:hover {
+	#main .left:focus, .right:focus {
 		background:orange;
 		cursor:pointer;
 	}
@@ -26,10 +26,10 @@
 		width: 60%;
 		display: block;
 		height: 400px;
-		margin:12em auto 0 auto;
+		margin:20.4em auto 0 auto;
 		clear: both;
 		border-radius:20px;
-	
+		
 	}
 	
 	#main .middle:hover
@@ -58,7 +58,7 @@
 	{
 		display: none;
 		position: relative;
-		padding: 1.9rem 0;
+		padding: 1rem 0 .7rem 0;
 		background:red;
 		
 	}
@@ -66,7 +66,7 @@
 	{
 		display: none;
 		position: relative;
-		padding: 1.5rem 0;
+		padding: 1rem 0 0 0;
 		background:red;
 		overflow: hidden;
 	}
@@ -109,7 +109,7 @@
 	{
 		display: none;
 		position: relative;
-		padding: 1.9rem 0;
+		padding: 1rem 0 .7rem 0;
 		background:red;
 		
 	}
@@ -117,7 +117,7 @@
 	{
 		display: none;
 		position: relative;
-		padding: 1.5rem 0;
+		padding: 1rem 0 0 0;
 		background:red;
 		overflow: hidden;
 	}
@@ -193,8 +193,8 @@
 		width:150px;
 		background:lightseagreen;
 		position:absolute;
-		left:613px;
-		top:739px;
+		left:615px;
+		top:675px;
 		display:none;
 		
 	}
@@ -205,7 +205,7 @@
 		background: orangered;
 		position:absolute;
 		left:1155px;
-		top:740px;
+		top:675px;
 		display:none;
 		
 		
@@ -216,11 +216,12 @@
 		background: red;
 		display: none;
 		position: absolute;
-		bottom: 495px;
-		left: 622px;
+		bottom: 380px;
+		left: 616px;
 	}
 	p
 	{
+		margin:0;
 		font-size:5em;
 		text-align: center;
 		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
