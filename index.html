@@ -59,10 +59,8 @@ $(window).ready(function(){
 	});
 	
 });
-
 	
-
-	$(window).ready(function(){
+	var x = $(window).ready(function(){
 		$(".middle").click(function(){
 			$(".top").hide(0),
 			$(".moving_square").show(0),
@@ -71,7 +69,7 @@ $(window).ready(function(){
 				$(".square_2_hiden").hide(0),
 				$(".square_1_hiden").hide(0),
 				$(".moving_square").hide(2000),
-				$(".moving_square").animate({"left":"+=220px", responsive: true}),
+				$(".moving_square").animate({"left":"+=220px"}),
 				$(".square_4_hiden").css("top","482px"),
 				$(".square_3_hiden").css("top","482px"),
 
@@ -113,13 +111,25 @@ $(window).ready(function(){
 				$(".moving_square").animate({"bottom":"+=310px"},1000),
 	
 				$(".moving_square").animate({"left":"+=592px"},1000),
-				$(".moving_square").hide(500);
+				//$(".moving_square").hide(500),
+				$(".moving_square").animate({"left":"-=592px"},1000),
+				$(".moving_square").animate({"top":"+=175px"},1000)
+				/*	$(this).delay(10000).animate({background:"yellow"}, 10000),
+					$(window).ready(function(){
+						$(window).reload()
+
+					});*/
 				
-					$(this).delay(10000).animate({background:"yellow"}, 10000)
 				
 				
 		});
 });
+	for(x; x>=10; x++)
+	{
+		x;
+	}
+
+	
 </script>
 
 <link href="style.css" rel="stylesheet" type="text/css">
